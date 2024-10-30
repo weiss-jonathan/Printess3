@@ -3,8 +3,165 @@ permalink: /gallery/
 title: "Gallery"
 layout: splash
 header:
-  overlay_image: /img/fleet.JPG  # Path to your large image
-  overlay_filter: 0.3  # Adds a dark filter to improve text readability (0 to 1)
-  caption:
-
+    overlay_image: /img/Fleet.JPG # Path to your large image
+    overlay_filter: 0.3 # Adds a dark filter to improve text readability (0 to 1)
+    caption:
 ---
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Grid container styling */
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        /* Each grid item */
+        .portfolio-item {
+            text-align: center;
+            
+        }
+
+        /* Image wrapper for overlay */
+        .image-wrapper {
+            position: relative;
+            display: inline-block;
+            overflow: hidden;
+        }
+
+        /* Image styling */
+        .image-wrapper img {
+            width: auto;
+            height: 400px;
+            display: block;
+            object-fit: cover; /* Keeps aspect ratio and crops excess */
+        }
+
+        /* Overlay styling for hover effect */
+        .image-wrapper .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Hover effect */
+        .image-wrapper:hover .overlay {
+            opacity: 1;
+        }
+
+        /* Overlay text styling */
+        .overlay p {
+            font-size: 1.2em;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Portfolio grid container -->
+    <div class="portfolio-grid">
+        <!-- Portfolio item 1 -->
+        <div class="portfolio-item">
+            <div class="image-wrapper">
+                <img src="/img/printessa.png" alt="Project 1">
+                <div class="overlay">
+                    <p>Portrait in Carbon Fiber</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Portfolio item 2 -->
+        <div class="portfolio-item">
+            <div class="image-wrapper">
+                <img src="/img/printessa2.png" alt="Project 2">
+                <div class="overlay">
+                    <p>Portrait in Carbon Fiber</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Portfolio item 3 -->
+        <div class="portfolio-item">
+            <div class="image-wrapper">
+                <img src="/img/printessaPLA.png" alt="Project 3">
+                <div class="overlay">
+                    <p>Portrait in PLA</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Portfolio item 4 -->
+        <div class="portfolio-item">
+            <div class="image-wrapper">
+                <img src="/img/S.png" alt="Project 3" style="height: 280px;">
+                <div class="overlay">
+                    <p>Multimaterial gradient 3D printing of the Stanford "S" logo from white to yellow.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Portfolio item 5 -->
+        <div class="portfolio-item">
+            <div class="image-wrapper">
+                <img src="/img/auxetic.png" alt="Project 3" style="height: 280px;">
+                <div class="overlay">
+                    <p>Multimaterial multinozzle 3D printing of a two-stiffness silicone auxetic structure.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Portfolio item 6 -->
+        <div class="portfolio-item">
+            <div class="image-wrapper">
+                <img src="/img/dragon.png" alt="Project 3" style="height: 280px;">
+                <div class="overlay">
+                    <p>Embedded 3D printing of the Stanford dragon.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 7 -->
+        <div class="portfolio-item">
+            <div class="image-wrapper">
+                <img src="/img/nozzle.png" alt="Project 3" style="height: 225px;">
+                <div class="overlay">
+                    <p>An 8x4 (32) array multinozzle for high-throughput embedded 3D printing.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Portfolio item 6 -->
+        <div class="portfolio-item">
+            <div class="image-wrapper">
+                <img src="/img/trees.png" alt="Project 3" style="height: 225px;">
+                <div class="overlay">
+                    <p>A tree model printed in 3 minutes using the 32-multinozzle.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Add more portfolio items as needed -->
+    </div>
+
+</body>
+
+</html>
