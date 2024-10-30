@@ -9,14 +9,31 @@ header:
   actions:
 ---
 
+<style>
+
+.responsive-iframe {
+    width: 1250px; /* Default to 100% width for responsiveness */
+    height: 480px;
+    margin: 20px auto;
+    display: block;
+}
+@media (max-width: 768px) { /* For screens smaller than 768px */
+    .responsive-iframe {
+        width: 100%; /* Adjust height for mobile */
+        height: 300px;
+    }
+}
+</style>
+
 <section>
 
 
     
     <h3 style="text-align: center; margin: 20px 0;">Printess around the World</h3>
     <iframe
-        src="https://www.google.com/maps/d/u/0/embed?mid=1emOOxBMpXeEcTDAt1NAd8opPJvD6uR4&ehbc=2E312F&noprof=1"
-        width="1000" height="480" style="margin: 20px auto; display: block;"></iframe>
+        class="responsive-iframe"
+        src="https://www.google.com/maps/d/u/0/embed?mid=1emOOxBMpXeEcTDAt1NAd8opPJvD6uR4&ehbc=2E312F&noprof=1">
+    </iframe>
 
     <div style="display: flex; justify-content: space-between; flex-wrap: wrap; margin-top: 20px;">
         <div style="flex: 1; margin-right: 10px;">
