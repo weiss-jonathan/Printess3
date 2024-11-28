@@ -1,13 +1,11 @@
 main:
-  # - title: "About"
-  #   url: /about/
-  # - title: "Build"
-  #   url: /build/
-  # - title: "Gallery"
-  #   url: /gallery/
-  # - title: "Publications"
-  #   url: /publications/
-  # - title: "Locations"
-  #   url: /locations/
-
-#Uncomment all for launch
+  - title: "About"
+    url: /about/
+  - title: "Build"
+    url: /build/
+  - title: "Gallery"
+    url: /gallery/
+  - title: "Publications"
+    url: /publications/
+  - title: "Locations"
+    url: /locations/
