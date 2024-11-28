@@ -11,5 +11,24 @@ header:
       class: "btn btn--primary" 
 
 ---
-<!-- 
+
+<!-- This is the home splash page -->
+
+<style>
+
+video {
+  width: 100%; /* Makes the video take up 100% of its container's width */
+  height: auto; /* Keeps the aspect ratio of the video */
+  max-width: 100%; /* Ensures the video doesn't stretch beyond its container */
+}
+
+</style>
+
+<div style="display: flex; justify-content: center; align-items: center; height: 100vh; margin-top: -100px;">
+
+  <video controls preload="auto" width="1280" height="720">
+    <source src="{{ site.baseurl }}/IntroVid.mp4" type="video/mp4">
+  </video>
+
+</div>
 
