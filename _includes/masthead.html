@@ -7,8 +7,8 @@
         {% unless logo_path == empty %}
           <a class="site-logo" href="{{ '/' | relative_url }}"><img src="{{ logo_path | relative_url }}" alt="{{ site.masthead_title | default: site.title }}"></a>
         {% endunless %}
-        <a class="site-title" href="{{ '/' | relative_url }}">
-          <img src="{{ site.baseurl }}/img/logo.png" style="height: 50px; margin-right: 10px; margin-bottom: -10px;">
+        <a style="color: black; margin-bottom: -10px;" class="site-title" href="{{ '/' | relative_url }}">
+          <img src="{{ site.baseurl }}/img/logo.png" style="height: 50px; margin-right: 10px; margin-bottom: 0px;">
 
           {{ site.masthead_title | default: site.title }}
           {% if site.subtitle %}<span class="site-subtitle">{{ site.subtitle }}</span>{% endif %}
@@ -17,6 +17,7 @@
           {%- for link in site.data.navigation.main -%}
             <li class="masthead__menu-item">
               <a
+                style="color: black;"
                 href="{{ link.url | relative_url }}"
                 {% if link.description %} title="{{ link.description }}"{% endif %}
                 {% if link.target %} target="{{ link.target }}"{% endif %}
