@@ -26,9 +26,26 @@ video {
 
 <div style="display: flex; justify-content: center; align-items: center; height: 100vh; margin-top: -100px;">
 
-  <video controls preload="auto" width="1280" height="720">
-    <source src="{{ site.baseurl }}/IntroVid.mp4" type="video/mp4">
-  </video>
+  <iframe 
+      width="560" 
+      height="315" 
+      src="https://www.youtube.com/embed/klpHsymtMYw?si=LozmxkCveEePtTzV" 
+      title="YouTube video player" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen>
+  </iframe>
 
 </div>
 
+<div style="display: flex; align-items: center; justify-content: center; gap: 20px; font-size: 25pt; margin-top: -15px;"> 
+  <h1 style="color: black; margin-top: 10px;"> As Published in </h1>
+  <!-- First Image -->
+  <a href="https://doi.org/10.1002/adma.202414971" target="_blank" rel="noopener noreferrer">
+      <img src="{{ site.baseurl }}/img/AdvMat.png" alt="Advanced Materials" style="height: 125px; width: auto; margin-left: 10px;">
+  </a>
+  <!-- Second Image -->
+  <a href="https://doi.org/10.1002/adma.202414971" target="_blank" rel="noopener noreferrer">
+      <img src="{{ site.baseurl }}/img/AdvMatCover.png" alt="Other Image" style="height: 150px; width: auto;">
+  </a>
+</div>
