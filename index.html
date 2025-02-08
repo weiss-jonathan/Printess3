@@ -22,6 +22,29 @@ video {
   max-width: 100%; /* Ensures the video doesn't stretch beyond its container */
 }
 
+img {
+        height: auto;  /* Allow the height to adjust naturally */
+        max-height: 50px;  /* Set a max height */
+        width: auto;  /* Maintain aspect ratio */
+    }
+
+@media (max-width: 768px) {  /* Adjusts styles for screens smaller than 768px */
+    .published-images {
+        flex-direction: column; /* Stack items vertically on small screens */
+        text-align: center;  /* Center align text */
+    }
+
+    h1 {
+        font-size: 16pt; /* Reduce text size on mobile */
+    }
+
+    img {
+        height: auto;  /* Allow the height to adjust naturally */
+        max-height: 50px;  /* Set a max height */
+        width: auto;  /* Maintain aspect ratio */
+    }
+}
+
 </style>
 
 <div style="display: flex; justify-content: center; align-items: center; height: 100vh; margin-top: -100px;">
@@ -42,10 +65,11 @@ video {
   <h1 style="color: black; margin-top: 10px;"> As Published in </h1>
   <!-- First Image -->
   <a href="https://doi.org/10.1002/adma.202414971" target="_blank" rel="noopener noreferrer">
-      <img src="{{ site.baseurl }}/img/AdvMat.png" alt="Advanced Materials" style="height: 125px; width: auto; margin-left: 10px;">
+      <img src="{{ site.baseurl }}/img/AdvMat.png" alt="Advanced Materials" style=" margin-left: 10px;">
   </a>
   <!-- Second Image -->
   <a href="https://doi.org/10.1002/adma.202414971" target="_blank" rel="noopener noreferrer">
-      <img src="{{ site.baseurl }}/img/AdvMatCover.png" alt="Other Image" style="height: 150px; width: auto;">
+      <img src="{{ site.baseurl }}/img/AdvMatCover.png" alt="Other Image" style= "max-height: 100px";>
   </a>
 </div>
+
