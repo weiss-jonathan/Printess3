@@ -55,20 +55,51 @@ p, h1, h2, h3 {
         src="https://www.google.com/maps/d/u/0/embed?mid=1emOOxBMpXeEcTDAt1NAd8opPJvD6uR4&ehbc=2E312F&noprof=1">
     </iframe>
 
-    <div style="display: flex; justify-content: space-between; flex-wrap: wrap; margin-top: 20px;">
-        <div style="flex: 1; margin-right: 10px;">
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; margin-top: 20px;">
+        <div style="flex-basis: 48%; margin-bottom: 20px;">
             <img src="{{ site.baseurl }}/img/class.JPG" alt="Printessa in class"
                  style="max-width: 100%; height: auto; margin-bottom: 15px;">
             <p>
                 <b>Stanford University, CA.</b> First fleet of Printessas built for the undergraduate introductory bioengineering lab.
             </p>
         </div>
-        <div style="flex: 1; margin-left: 10px;">
+    
+        <div style="flex-basis: 48%; margin-bottom: 20px;">
             <img src="{{ site.baseurl }}/img/baltimore.jpeg" alt="Printessa workshop"
-                 style="max-width: 99%; height: auto; margin-bottom: 15px;">
+                 style="max-width: 100%; height: auto; margin-bottom: 15px;">
             <p>
                 <b>Baltimore, MD.</b> Printessa workshop at Additional Ventures Cures Collaborative Conference for printing embedded vascular networks.
             </p>
         </div>
+    
+        <!-- Wrapping the 3rd and 5th images to stack them -->
+        <div style="flex-basis: 48%; display: flex; flex-direction: column; gap: 20px;">
+            <div>
+                <img src="{{ site.baseurl }}/img/CZ1.jpeg"
+                     style="max-width: 100%; height: auto; margin-bottom: -10px;">
+
+            </div>
+    
+            <div>
+                <img src="{{ site.baseurl }}/img/CZ3.jpeg"
+                     style="max-width: 100%; height: auto; margin-bottom: 15px;">
+
+            </div>
+        </div>
+    
+        <div style="flex-basis: 48%;">
+            <img src="{{ site.baseurl }}/img/CZ2.jpeg"
+                 style="max-width: 100%; height: auto; margin-bottom: 15px;">
+        </div>
+
+        <div style="flex-basis: 100%; margin-bottom: 20px;">
+            <p>
+                <b>San Francisco, CA.</b> Chan Zuckerberg Biohub Network Printess build-and-print workshop for academic labs in Stanford, UCSF, and Berkeley
+            </p>
+        </div>
+
     </div>
+    
+    
+    
 </section>
