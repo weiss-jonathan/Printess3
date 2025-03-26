@@ -89,6 +89,66 @@ actions:
             font-size: 1.2em;
             margin: 0;
         }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            /* 3 equal columns */
+            gap: 15px;
+            /* Space between images */
+            padding: 15px;
+            width: 100%;
+            /* Full width */
+
+        }
+
+        /* Apply transform on desktop screens only */
+        @media (min-width: 768px) {
+            .grid-container {
+
+                transform: translateX(-26%);
+                /* Centers it perfectly */
+                width: 300%;
+            }
+        }
+
+        .grid-container img {
+            width: 100%;
+            /* Ensures images span their column */
+            height: auto;
+            border-radius: 5px;
+            /* Optional: rounded corners */
+        }
+
+        /* Smooth animation when expanding */
+        details[open] .grid-container {
+            animation: fadeIn 0.3s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-5px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive: Adjust to 2 columns on medium screens and 1 on small */
+        @media (max-width: 900px) {
+            .grid-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .grid-container {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
     </style>
 </head>
 
@@ -104,6 +164,8 @@ actions:
                     <p>Cover Photo.</p>
                 </div>
             </div>
+
+
 
         </div>
 
@@ -122,6 +184,18 @@ actions:
         <!-- Portfolio item 3 -->
         <div class="portfolio-item">
             <div class="image-wrapper">
+                <img src="{{ site.baseurl }}/img/PLABambu.JPG" alt="Project 3">
+                <div class="overlay">
+                    <p>Printess from the Skylar-Scott Lab at Stanford University. Components printed using PLA on a
+                        Bambu X1E.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Portfolio item 3.10 -->
+        <div class="portfolio-item">
+            <div class="image-wrapper">
                 <img src="{{ site.baseurl }}/img/printessaPLA.png" alt="Project 3">
                 <div class="overlay">
                     <p>Printess from the Jennifer Lewis Lab at Harvard University. Components printed using PLA on a
@@ -130,17 +204,35 @@ actions:
             </div>
         </div>
 
-
-
-        <!-- Portfolio item 3.1 -->
+        <!-- Portfolio item 3.11 -->
         <div class="portfolio-item">
             <div class="image-wrapper">
-                <img src="{{ site.baseurl }}/img/PLABambu.JPG" alt="Project 3">
+                <img src="{{ site.baseurl }}/img/Seo/1.jpg" alt="Project 3">
                 <div class="overlay">
-                    <p>Printess from the Skylar-Scott Lab at Stanford University. Components printed using PLA on a
-                        Bambu X1E.</p>
+                    <p>Printess from the Seo Woo Song lab at KIST, South Korea. Click the dropdown for more photos from
+                        the lab.</p>
                 </div>
             </div>
+
+            <!-- Collapsible Image Gallery -->
+            <details>
+                <summary style="cursor: pointer; font-weight: bold; margin-top: -10px; color: black; font-size: 14pt;">+ More</summary>
+                <div class="grid-container">
+                    <img src="{{ site.baseurl }}/img/Seo/1.jpg" alt="Additional 1" style="width: 200px; height: auto;">
+                    <!-- <img src="{{ site.baseurl }}/img/Seo/2.jpg" alt="Additional 2" style="width: 200px; height: auto;"> -->
+                    <img src="{{ site.baseurl }}/img/Seo/3.jpg" alt="Additional 3" style="width: 200px; height: auto;">
+                    <!-- <img src="{{ site.baseurl }}/img/Seo/4.jpg" alt="Additional 1" style="width: 200px; height: auto;"> -->
+                    <img src="{{ site.baseurl }}/img/Seo/5.jpg" alt="Additional 2" style="width: 200px; height: auto;">
+                    <img src="{{ site.baseurl }}/img/Seo/6.jpg" alt="Additional 3" style="width: 200px; height: auto;">
+                    <img src="{{ site.baseurl }}/img/Seo/7.jpg" alt="Additional 1" style="width: 200px; height: auto;">
+                    <img src="{{ site.baseurl }}/img/Seo/8.jpg" alt="Additional 2" style="width: 200px; height: auto;">
+                    <img src="{{ site.baseurl }}/img/Seo/9.jpg" alt="Additional 3" style="width: 200px; height: auto;">
+                    <img src="{{ site.baseurl }}/img/Seo/10.jpg" alt="Additional 1" style="width: 200px; height: auto;">
+                    <img src="{{ site.baseurl }}/img/Seo/11.jpg" alt="Additional 2" style="width: 200px; height: auto;">
+
+                </div>
+            </details>
+
         </div>
 
 
@@ -159,7 +251,8 @@ actions:
             <div class="image-wrapper">
                 <img src="{{ site.baseurl }}/img/arianPrintess.jpeg">
                 <div class="overlay">
-                    <p>Printess from Arian Nasser at University of Sydney, Australia. Back and bottom boards machined from steel for increased stiffness and print platform range of motion.</p>
+                    <p>Printess from Arian Nasser at University of Sydney, Australia. Back and bottom boards machined
+                        from steel for increased stiffness and print platform range of motion.</p>
                 </div>
             </div>
         </div>
