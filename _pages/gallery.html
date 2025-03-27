@@ -98,31 +98,28 @@ actions:
             /* Space between images */
             padding: 15px;
             width: 100%;
-            /* Full width */
+            height: auto;
+
 
         }
 
         /* Apply transform on desktop screens only */
         @media (min-width: 768px) {
-            .grid-container {
+            .skyscott {
+
+                transform: translateX(-30%);
+                /* Centers it perfectly */
+                width: 250%;
+
+
+            }
+
+            .seowoo {
 
                 transform: translateX(-26%);
                 /* Centers it perfectly */
                 width: 300%;
             }
-        }
-
-        .grid-container img {
-            width: 100%;
-            /* Ensures images span their column */
-            height: auto;
-            border-radius: 5px;
-            /* Optional: rounded corners */
-        }
-
-        /* Smooth animation when expanding */
-        details[open] .grid-container {
-            animation: fadeIn 0.3s ease-in-out;
         }
 
         @keyframes fadeIn {
@@ -175,10 +172,68 @@ actions:
                 <img src="{{ site.baseurl }}/img/printessa2.png" alt="Project 2">
                 <div class="overlay">
                     <p>Printess from the Skylar-Scott Lab at Stanford University. Components printed using carbon
-                        fiber-nylon composite on a Markforged Mark II.</p>
+                        fiber-nylon composite on a Markforged Mark II. Click the dropdown for more photos from
+                        the lab.</p>
                 </div>
             </div>
 
+            <details>
+                <summary style="cursor: pointer; font-weight: bold; margin-top: -10px; color: black; font-size: 14pt;">
+                    More</summary>
+                <div class="grid-container skyscott">
+
+                    <!-- Portfolio item 4 -->
+                    <div class="portfolio-item">
+                        <div class="image-wrapper">
+                            <img src="{{ site.baseurl }}/img/S.png" alt="Project 3" style="height: 280px;">
+                            <div class="overlay">
+                                <p>Multimaterial gradient 3D printing of the Stanford "S" logo from white to yellow.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Portfolio item 5 -->
+                    <div class="portfolio-item">
+                        <div class="image-wrapper">
+                            <img src="{{ site.baseurl }}/img/auxetic.png" alt="Project 3" style="height: 280px;">
+                            <div class="overlay">
+                                <p>Multimaterial multinozzle 3D printing of a two-stiffness silicone auxetic structure.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Portfolio item 6 -->
+                    <div class="portfolio-item">
+                        <div class="image-wrapper">
+                            <img src="{{ site.baseurl }}/img/dragon.png" alt="Project 3" style="height: 280px;">
+                            <div class="overlay">
+                                <p>Embedded 3D printing of the Stanford dragon.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Portfolio item 7 -->
+                    <div class="portfolio-item">
+                        <div class="image-wrapper">
+                            <img src="{{ site.baseurl }}/img/nozzle.png" alt="Project 3" style="height: 225px;">
+                            <div class="overlay">
+                                <p>An 8x4 (32) array multinozzle for high-throughput embedded 3D printing.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Portfolio item 8 -->
+                    <div class="portfolio-item">
+                        <div class="image-wrapper">
+                            <img src="{{ site.baseurl }}/img/trees.png" alt="Project 3" style="height: 225px;">
+                            <div class="overlay">
+                                <p>A tree model printed in 3 minutes using the 32-multinozzle.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </details>
         </div>
 
         <!-- Portfolio item 3 -->
@@ -216,8 +271,9 @@ actions:
 
             <!-- Collapsible Image Gallery -->
             <details>
-                <summary style="cursor: pointer; font-weight: bold; margin-top: -10px; color: black; font-size: 14pt;">+ More</summary>
-                <div class="grid-container">
+                <summary style="cursor: pointer; font-weight: bold; margin-top: -10px; color: black; font-size: 14pt;">
+                    More</summary>
+                <div class="grid-container seowoo">
                     <img src="{{ site.baseurl }}/img/Seo/1.jpg" alt="Additional 1" style="width: 200px; height: auto;">
                     <!-- <img src="{{ site.baseurl }}/img/Seo/2.jpg" alt="Additional 2" style="width: 200px; height: auto;"> -->
                     <img src="{{ site.baseurl }}/img/Seo/3.jpg" alt="Additional 3" style="width: 200px; height: auto;">
@@ -281,7 +337,7 @@ actions:
         <!-- Portfolio item 3.3 -->
         <div class="portfolio-item">
             <div class="image-wrapper">
-                <img src="{{ site.baseurl }}/img/LucaPrintess.png" alt="Project 3">
+                <img src="{{ site.baseurl }}/img/LucaPrintess.png" alt="Project 3" style="width: 265px;">
                 <div class="overlay">
                     <p>Triple extruder modification for core-shell-shell printing.</p>
                 </div>
@@ -289,59 +345,12 @@ actions:
         </div>
 
 
-        <!-- Portfolio item 4 -->
-        <div class="portfolio-item">
-            <div class="image-wrapper">
-                <img src="{{ site.baseurl }}/img/S.png" alt="Project 3" style="height: 280px;">
-                <div class="overlay">
-                    <p>Multimaterial gradient 3D printing of the Stanford "S" logo from white to yellow.</p>
-                </div>
-            </div>
-        </div>
 
-        <!-- Portfolio item 5 -->
-        <div class="portfolio-item">
-            <div class="image-wrapper">
-                <img src="{{ site.baseurl }}/img/auxetic.png" alt="Project 3" style="height: 280px;">
-                <div class="overlay">
-                    <p>Multimaterial multinozzle 3D printing of a two-stiffness silicone auxetic structure.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Portfolio item 6 -->
-        <div class="portfolio-item">
-            <div class="image-wrapper">
-                <img src="{{ site.baseurl }}/img/dragon.png" alt="Project 3" style="height: 280px;">
-                <div class="overlay">
-                    <p>Embedded 3D printing of the Stanford dragon.</p>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio item 7 -->
-        <div class="portfolio-item">
-            <div class="image-wrapper">
-                <img src="{{ site.baseurl }}/img/nozzle.png" alt="Project 3" style="height: 225px;">
-                <div class="overlay">
-                    <p>An 8x4 (32) array multinozzle for high-throughput embedded 3D printing.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Portfolio item 8 -->
-        <div class="portfolio-item">
-            <div class="image-wrapper">
-                <img src="{{ site.baseurl }}/img/trees.png" alt="Project 3" style="height: 225px;">
-                <div class="overlay">
-                    <p>A tree model printed in 3 minutes using the 32-multinozzle.</p>
-                </div>
-            </div>
-        </div>
 
         <!-- Portfolio item 9 -->
         <div class="portfolio-item">
             <div class="image-wrapper">
-                <img src="{{ site.baseurl }}/img/smiley.png" style="height: 225px;">
+                <img src="{{ site.baseurl }}/img/smiley.png" style="height: 300px;">
                 <div class="overlay">
                     <p>Fluorescent bacteria printed on agar.</p>
                 </div>
@@ -350,6 +359,7 @@ actions:
 
 
     </div>
+
 
 </body>
 
