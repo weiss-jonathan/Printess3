@@ -120,6 +120,13 @@ header:
                 /* Centers it perfectly */
                 width: 300%;
             }
+
+            .appel {
+
+                transform: translateX(0%);
+                /* Centers it perfectly */
+                width: 300%;
+            }
         }
 
         @keyframes fadeIn {
@@ -283,8 +290,10 @@ header:
                     <img src="{{ site.baseurl }}/img/Seo/7.webp" alt="Additional 1" style="width: 200px; height: auto;">
                     <img src="{{ site.baseurl }}/img/Seo/8.webp" alt="Additional 2" style="width: 200px; height: auto;">
                     <img src="{{ site.baseurl }}/img/Seo/9.webp" alt="Additional 3" style="width: 200px; height: auto;">
-                    <img src="{{ site.baseurl }}/img/Seo/10.webp" alt="Additional 1" style="width: 200px; height: auto;">
-                    <img src="{{ site.baseurl }}/img/Seo/11.webp" alt="Additional 2" style="width: 200px; height: auto;">
+                    <img src="{{ site.baseurl }}/img/Seo/10.webp" alt="Additional 1"
+                        style="width: 200px; height: auto;">
+                    <img src="{{ site.baseurl }}/img/Seo/11.webp" alt="Additional 2"
+                        style="width: 200px; height: auto;">
 
                 </div>
             </details>
@@ -323,6 +332,34 @@ header:
             </div>
         </div>
 
+        <!-- Portfolio item 3.14 -->
+        <div class="portfolio-item">
+            <div class="image-wrapper">
+                <img src="{{ site.baseurl }}/img/appel.webp" loading="lazy">
+                <div class="overlay">
+                    <p>Printess from the Eric Appel Lab at Stanford University.</p>
+                </div>
+            </div>
+
+            <!-- Collapsible Image Gallery -->
+            <details>
+                <summary style="cursor: pointer; font-weight: bold; margin-top: -10px; color: black; font-size: 14pt;">
+                    More</summary>
+                <div class="grid-container appel">
+
+                    <div class="portfolio-item">
+                        <div class="image-wrapper">
+                            <img src="{{ site.baseurl }}/img/snake.webp" alt="Project 3" style="width: auto; height: 300px;">
+                            <div class="overlay">
+                                <p>Snake geometry to evaluate extensibility and printability of hydrogels. See Song et al. in Publications.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </details>
+        </div>
+
 
         <!-- Portfolio item 3.2 -->
         <div class="portfolio-item">
@@ -344,9 +381,6 @@ header:
             </div>
         </div>
 
-
-
-
         <!-- Portfolio item 9 -->
         <div class="portfolio-item">
             <div class="image-wrapper">
@@ -359,8 +393,34 @@ header:
 
 
     </div>
+    
+<!-- Uncomment to enable next page -->
+    <!-- <div class="pagination">
+        <a href="{{ site.baseurl }}/gallery/2" class="next-page">Next Page</a>
+      </div> -->
 
 
 </body>
+
+<style>
+
+    .pagination {
+    text-align: center; /* Centers the link */
+    margin-top: 20px; /* Adjust spacing if needed */
+    }
+
+    .next-page {
+    color: black; /* Make the text black */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Optional: Make it bold for better visibility */
+    gap: 5px; /* Space between text and arrow */
+    }
+
+    .next-page::after {
+    content: "→"; /* Adds the right arrow */
+    font-size: 1em; /* Adjusts the arrow size */
+    }
+
+</style>
 
 </html>
