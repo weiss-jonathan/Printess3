@@ -159,8 +159,73 @@ header:
 
 
         </div>
+
+        <!-- Portfolio item 9 -->
+        <div class="portfolio-item">
+            <div class="image-wrapper">
+                <img src="{{ site.baseurl }}/img/smiley.webp" loading="lazy" style="height: 300px;">
+                <div class="overlay">
+                    <p>Fluorescent bacteria printed on agar.</p>
+                </div>
+            </div>
+        </div>
+
+
+
     </div>
 
+    <div class="pagination">
+        <a href="{{ site.baseurl }}/gallery/" class="prev-page">Previous Page</a>
+    </div>
+
+    
+
 </body>
+
+<style>
+    .pagination {
+        text-align: center;
+        /* Centers the link */
+        margin-top: 20px;
+        /* Adjust spacing if needed */
+    }
+
+    .next-page {
+        color: black;
+        /* Make the text black */
+        text-decoration: none;
+        /* Remove underline */
+        font-weight: bold;
+        /* Optional: Make it bold for better visibility */
+        gap: 5px;
+        /* Space between text and arrow */
+    }
+
+    .next-page::after {
+        content: "→";
+        /* Adds the right arrow */
+        font-size: 1em;
+        /* Adjusts the arrow size */
+    }
+
+
+    .prev-page {
+        color: black;
+        /* Make the text black */
+        text-decoration: none;
+        /* Remove underline */
+        font-weight: bold;
+        /* Optional: Make it bold for better visibility */
+        gap: 5px;
+        /* Space between text and arrow */
+    }
+
+    .prev-page::before {
+        content: "←";
+        /* Adds the right arrow */
+        font-size: 1em;
+        /* Adjusts the arrow size */
+    }
+</style>
 
 </html>
