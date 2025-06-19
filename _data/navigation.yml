@@ -3,6 +3,9 @@ main:
     url: /about/
   - title: "Build"
     url: /build/
+  - title: "Buy"
+    url: "https://printesstechnologies.com/"
+    target: _blank
   - title: "Gallery"
     url: /gallery/
   - title: "Publications"
