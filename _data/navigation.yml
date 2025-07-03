@@ -4,8 +4,7 @@ main:
   - title: "Build"
     url: /build/
   - title: "Buy"
-    url: "https://printesstechnologies.com/"
-    target: _blank
+    url: /buy/
   - title: "Gallery"
     url: /gallery/
   - title: "Publications"
